@@ -1,83 +1,33 @@
-.accordions__item {
+
+.c-accordions__item {
     width: 100%;
+    border: 1px solid #ccc;
+    margin: 4px 0px;
 }
-.accordions__heading {
-    cursor: pointer;
-    padding: 10px;
-    background-color: blue;
-    color: #fff;
-    font-weight: 800;
-    margin: 0px;
-    border-radius: 3px;
+.c-accordions__heading {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
 }
-.close .accordions__item-content {
-    height: 0px;
+.close .c-accordions__item-content {
+    height: 0;
     transition: height 1s ease-out;
     transform: scaleY(0);
 }
-.open .accordions__item-content {
+.open .c-accordions__item-content {
     margin: 0px 0px 10px 0px;
-    border: 1px solid blue;
     transform: scaleY(1);
     transform-origin: top;
     transition: transform 0.4s ease;
 }
-
-.open .accordions__heading {
+.open .c-accordions__heading {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    background-color: cornflowerblue;
-}
-
-/* Solution 2 */
-.accordion__title {
-    cursor: pointer;
-}
-.accordion__item {
-    border: 1px solid #000;
-    &.active {
-
-        .accordion__title .accordion-arrow {
-            transform: rotate(-180deg);
-            transition: ease .3s transform;
-        }
-
-        .accordion__content {
-            transition: ease .3s all;
-            animation-name: fadeIn;
-            animation-duration: .6s;
-            animation-fill-mode: both;
-            will-change: transform;
-        }
+    background-color: #ccc;
+    .accordion-arrow {
+        transform: rotate(-180deg);
+        transition: ease .3s transform;
     }
-
-}
-.fade-in {
-    animation-name: fadeIn;
-    animation-duration: .6s;
-    animation-fill-mode: both;
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
-  }
-  
-
-.accordion__title {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.hidden {
-    display: none;
-}
-.active {
-    display: block;
 }
