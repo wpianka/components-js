@@ -1,5 +1,6 @@
 function onTabClick(event) {
     let activeTabs =  document.querySelectorAll('.tab-active');
+    event.preventDefault();
 
     /* replace all class active to null
      case when we have the same name -active- both Tabs and  panel */
