@@ -1,0 +1,27 @@
+.tabs__nav {
+    li {
+        display: inline-flex;
+    }
+}
+.tabs__nav-link {
+    text-decoration: none;
+    color:darkgray;
+    padding: 10px;
+    transition: all .3s ease-in-out;
+    border-bottom:1px solid transparent;
+    &:hover {
+        color: slateblue;
+    }
+}
+.tabs__nav .tab-active a {
+    color: slateblue;
+    border-bottom: 1px solid slateblue;
+}
+
+.tabs__pane {
+    display: none;
+}
+.tabs__pane.tab-active {
+    display: block;
+    
+}

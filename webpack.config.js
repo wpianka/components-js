@@ -107,6 +107,10 @@ module.exports = (env, options) => {
                 template: "./src/components/accordions.html",
                 filename:"./components/accordions.html"
             }),
+            new HtmlWebpackPlugin({
+                template: "./src/components/tabs.html",
+                filename:"./components/tabs.html"
+            }),
             new MiniCssExtractPlugin({
                 filename: "css/[name].css",
                 chunkFilename: "[id].css"
