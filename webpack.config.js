@@ -108,6 +108,10 @@ module.exports = (env, options) => {
                 filename:"./components/accordions.html"
             }),
             new HtmlWebpackPlugin({
+                template: "./src/components/carousel.html",
+                filename:"./components/carousel.html"
+            }),
+            new HtmlWebpackPlugin({
                 template: "./src/components/tabs.html",
                 filename:"./components/tabs.html"
             }),
