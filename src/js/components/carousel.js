@@ -31,18 +31,7 @@ rightButton.addEventListener("click", function() {
     }
 });
 
-back.addEventListener("click", function() {
-    if (offset !== 0) {
-        offset = 0;
-        carousel.style.transform = `translateX(${offset}px)`;
-        }
-});
-
 play = setInterval(slide, 5000);
-
-autoplay.addEventListener("click", function(){
-   play = setInterval(slide, 5000);
-})
 
 stopplay.addEventListener("click", function(){
     clearInterval(play);
@@ -51,7 +40,6 @@ stopplay.addEventListener("click", function(){
 function stopSlide() {
     clearInterval(play);
 }
-
 
 function slide() {
     if (offset !== maxX) {
