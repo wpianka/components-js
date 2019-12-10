@@ -15,7 +15,7 @@ const cardCount = carousel.querySelectorAll("[data-target='card']").length;
 let offset = 0;
 const maxX = -((cardCount/3) * carouselWidth + (cardMarginRight * (cardCount / 3)) - carouselWidth - cardMarginRight );
 
-var play; 
+let play; 
 
 leftButton.addEventListener("click", function() {
     if (offset !== 0) {
