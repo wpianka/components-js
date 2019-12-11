@@ -1,0 +1,31 @@
+.c-modal {
+    width: 100%;
+    height: 100%;
+    background: rgba($color: #000000, $alpha: 0.2);
+    z-index: 10;
+    position: absolute;
+    left:0;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+
+}
+.c-modal__inner {
+    width: 70%;
+    height: auto;
+    padding: 2%;
+    background: #fff;
+    text-align: center;
+}
+
+.c-modal-open {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.c-modal-remove {
+    opacity: 0;
+    transform: translateY(-50px);
+}

@@ -115,6 +115,10 @@ module.exports = (env, options) => {
                 template: "./src/components/tabs.html",
                 filename:"./components/tabs.html"
             }),
+            new HtmlWebpackPlugin({
+                template: "./src/components/modal.html",
+                filename:"./components/modal.html"
+            }),
             new MiniCssExtractPlugin({
                 filename: "css/[name].css",
                 chunkFilename: "[id].css"

@@ -127,7 +127,7 @@ const carousel = options => {
     return _carousel;
   };
   
-  window.onload = () =>
+  // window.onload = () =>
     carousel({
       selector: ".c-carousel"
     });
