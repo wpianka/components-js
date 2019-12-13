@@ -6,9 +6,6 @@
     position: absolute;
     left:0;
     top:0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     transition: all 0.2s;
 
 }
@@ -21,11 +18,11 @@
 }
 
 .c-modal-open {
-    opacity: 1;
-    transform: translateY(0);
+   display: flex;
+   justify-content: center;
+    align-items: center;
 }
 
 .c-modal-remove {
-    opacity: 0;
-    transform: translateY(-50px);
+   display: none;
 }

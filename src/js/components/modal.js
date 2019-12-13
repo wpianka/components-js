@@ -5,7 +5,7 @@ function showModal() {
     setTimeout(function (){
         popup.classList.remove("c-modal-remove");
         popup.classList.add("c-modal-open");
-    }, 2000);
+    }, 5000);
 }
 
 const removeModal = function() {
